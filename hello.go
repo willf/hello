@@ -15,8 +15,13 @@ func main() {
 		"Korean":     "여보세요 세계",
 		"Portuguese": "Olá mundo",
 		"Russian":    "Здравствулте мир",
-		"Spanish":    "Hola mundo"}
+		"Spanish":    "Hola mundo",
+		"Catalan":    "Hola, món!"}
+	fmt.Printf(`# hello
+Go version of the world's most popular program
+
+`)
 	for key, value := range greetings {
-		fmt.Println("In", key, "they say:", value)
+		fmt.Printf("In %v, they say, \"%v\".  \n", key, value)
 	}
 }
